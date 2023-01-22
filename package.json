@@ -4,7 +4,7 @@
   "description": "Proyecto personal basado completamente en Node, con Express para el servidor, Pug para las vistas y otras dependencias mas",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sr": "nodemon src/server.js"
   },
   "author": "Yuale Langomas",
   "license": "ISC",
