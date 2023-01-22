@@ -1,1 +1,1 @@
-alert("script.js esta preparado para funcionar");
+// alert("script.js esta preparado para funcionar");

@@ -12,7 +12,7 @@ El Backend esta hecho con **Express**, de forma modular, todos los modulos estan
 
 2. [server.js](src/server.js): Aqui se inicia el servidor, resive todos los datos de *app.js*.
 
-3. [router.js](src/app/router/router.js): Aqui se administra el Router, es decir todas las rutas de los archivos del servidor, para luego ser enviado a *app.js*
+3. [router.js](src/app/router/router.js): Aqui se administra el Router, es decir todas las rutas de los archivos del servidor, para luego ser enviado a *app.js*.
 
 ### PUG
 La vista esta hecha con **PUG**, hay un [Layout principal](src/public/view/Layout/layout.pug) donde se almacena el esqueleto de nuestra pagina, a este esqueleto se importan las [hojas de estilo](src/public/css/style.css), los [scrips](src/public/js/script.js), el [footer](src/public/view/components/footer.pug) y el [header](src/public/view/components/header.pug).
