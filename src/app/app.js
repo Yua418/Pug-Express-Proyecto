@@ -1,10 +1,16 @@
 const express = require("express");
+const morgan = require("morgan");
 
 const app = express();
+const statics = __dirname.replace("app", "public"); // __dirname toma la ubicacion actual, remplazamos app por public para tomar la ruta de esa carpeta
 
 app.set("port", process.env.PORT || 4000); //Creamos la variable del puerto
 app.set("views", "./src/public/view"); // Especificamos la ubicacion del template engine
 app.set("view engine", "pug"); // Habilitamos PUG
+
+// Middlewares
+app.use(morgan("dev")); // Usamos Morgan para ver los estados de las peticiones del servidor
+app.use(express.static(statics)); // Habilitamos los archivos estaticos (CSS, Scrips...)
 
 app.get("/", (req, res) => {
     res.render("./pages/index");

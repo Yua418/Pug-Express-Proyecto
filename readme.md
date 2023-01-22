@@ -7,4 +7,4 @@ El Backend esta hecho con **Express**, de forma modular, todos los modulos estan
     1. *src/app/app.js*: Aqui esta configurado el servidor.
     2. *src/server.js*: Aqui se inizializa el servidor.
 
-La vista esta hecha con **PUG**
+La vista esta hecha con **PUG**, hay un [Layout prinsipal](src/public/view/pages/index.pug), tambien un footer y header
