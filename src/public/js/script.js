@@ -1,1 +1,1 @@
-console.log("Hola");
+alert("script.js esta preparado para funcionar");

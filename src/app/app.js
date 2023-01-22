@@ -1,5 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
+const router = require("./router/router");
 
 const app = express();
 const statics = __dirname.replace("app", "public"); // __dirname toma la ubicacion actual, remplazamos app por public para tomar la ruta de esa carpeta
@@ -11,9 +12,6 @@ app.set("view engine", "pug"); // Habilitamos PUG
 // Middlewares
 app.use(morgan("dev")); // Usamos Morgan para ver los estados de las peticiones del servidor
 app.use(express.static(statics)); // Habilitamos los archivos estaticos (CSS, Scrips...)
-
-app.get("/", (req, res) => {
-    res.render("./pages/index");
-});
+app.use(router); // importamos el router
 
 module.exports = app;
