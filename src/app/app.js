@@ -13,8 +13,7 @@ app.set("view engine", "pug"); // Habilitamos PUG
 app.use(morgan("dev")); // Usamos Morgan para ver los estados de las peticiones del servidor
 app.use(express.static(statics)); // Habilitamos los archivos estaticos (CSS, Scrips...)
 app.use((req, res, next) => {
-    const year = new Date; // Crea en todas las paginas una variable "thisYear" con el año actual
-    res.locals.thisYear = year.getFullYear();
+    res.locals.page = "BlogDeCafe";
     next();
 });
 app.use(router); // importamos el router

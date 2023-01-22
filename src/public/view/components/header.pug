@@ -1,9 +1,13 @@
-header 
-    nav 
-        ul 
-            li
-                a(href="/") Home
-            li
-                a(href="/gallery") Gallery
-            li
-                a(href="/contact") Contact
+header.header
+    .contenedor
+        .barra
+            a.logo(href='/')
+                h1.logo__nombre.no_margin.textcenter Blog
+                    span.logo__nombre-bold DeCafe
+            nav.navegacion
+                a.navegacion__enlace(href='/nosotros') Nosotros
+                a.navegacion__enlace(href='/cursos') Cursos
+                a.navegacion__enlace(href='/contacto') Contacto
+    .header__text
+        h2.no_margin Blog de cafe con consejos y cursos
+        p.no_margin Aprende de los expertos con las mejores recetas y consejos

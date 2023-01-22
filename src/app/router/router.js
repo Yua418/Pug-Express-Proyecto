@@ -6,15 +6,21 @@ router.get("/", (req, res, next) => {
     next();
 });
 
-router.get("/gallery", (req, res, next) => {
-    res.render("./pages/gallery");
-    myTitle= "Galeria";
+router.get("/cursos", (req, res, next) => {
+    res.render("./pages/cursos");
+    myTitle= "Cursos";
     next();
 });
 
 router.get("/contact", (req, res, next) => {
     res.render("./pages/contact");
-    myTitle= "Contactos";
+    myTitle= "Contacto";
+    next();
+});
+
+router.get("/nosotros", (req, res, next) => {
+    res.render("./pages/nosotros");
+    myTitle= "Nosotros";
     next();
 });
 
