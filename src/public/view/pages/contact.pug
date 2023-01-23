@@ -1,3 +1,20 @@
 extends ../Layout/layout.pug
 block content
-    h1 hola, soy contactos
+        main.contenedor
+        h3.contact-title.textcenter Contacto
+        .contact-background
+        form.formulario
+            .camp
+                label(class="camp__label", for="nombre") Nombre
+                input#nombre(class="camp__field", type="text", placeholder="Tu Nombre")
+            .camp
+                label(class="camp__label", for="email") Email
+                input#email(class="camp__field", type="email", placeholder="Tu Email")
+            .camp
+                label(class="camp__label", for="numero") Telefono
+                input#numero(class="camp__field", type="number", placeholder="Numero de Telefono")
+            .camp
+                label(class="camp__label", for="texto") Mensaje
+                textarea#texto(class=".camp__field--texarea", cols="100%", rows="5")
+            .camp
+                input.button.button-primary.button-form(type="submit", value="Enviar")

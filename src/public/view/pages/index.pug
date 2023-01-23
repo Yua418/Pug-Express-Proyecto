@@ -1,3 +1,45 @@
 extends ../Layout/layout.pug
 block content
-    h1 hola, soy la pagina principal 
+    .contenedor.contenido-principal
+        main.blog
+            h3 Nuestro Blog
+            article.entrada
+                div(class="entrada__imagen")
+                    img(src="img/blog1.jpg", alt="imagen blog")
+                div(class="entrada__contenido")
+                    h4.no-margin Tipos de granos de cafe
+                    p.textjustify Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui harum maiores necessitatibus maxime laboriosam illo sed mollitia pariatur suscipit, nobis animi repellendus error reprehenderit fugiat? Vero unde temporibus doloremque magnam.
+                    a.button.button-primary(href="/entrada") Leer Entrada
+            article.entrada
+                div(class="entrada__imagen")
+                    img(src="img/blog2.jpg", alt="imagen blog")
+                div(class="entrada__contenido")
+                    h4.no-margin 3 Deliciosas Recetas de café
+                    p.textjustify Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui harum maiores necessitatibus maxime laboriosam illo sed mollitia pariatur suscipit, nobis animi repellendus error reprehenderit fugiat? Vero unde temporibus doloremque magnam.
+                    a.button.button-primary(href="/entrada") Leer Entrada
+            article.entrada
+                div(class="entrada__imagen")
+                    img(src="img/blog3.jpg", alt="imagen blog")
+                div(class="entrada__contenido")
+                    h4.no-margin Beneficios del café
+                    p.textjustify Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui harum maiores necessitatibus maxime laboriosam illo sed mollitia pariatur suscipit, nobis animi repellendus error reprehenderit fugiat? Vero unde temporibus doloremque magnam.
+                    a.button.button-primary(href="/entrada") Leer Entrada
+        aside.sidebar
+            h3 Nuestros Cursos y Talleres
+            ul(class="courses no_padding no_margin")
+                li.widget-courses
+                    h4 Técnicas de Extracción de Café
+                    p(class="widget-courses__label") precio: 
+                        span(class="widget-courses__info") Gratis
+                    p(class="widget-courses__label") Cupos: 
+                        span(class="widget-courses__info") 20
+                    a.button.button-secondary(href="/entrada") Mas información
+                li.widget-courses
+                    h4 4 Recetas de Café para principiantes
+                    p(class="widget-courses__label") precio: 
+                        span(class="widget-courses__info") Gratis
+                    p(class="widget-courses__label") Cupos: 
+                        span(class="widget-courses__info") 10
+                    a.button.button-secondary(href="/entrada") Mas información
+
+

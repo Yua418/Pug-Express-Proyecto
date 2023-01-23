@@ -24,4 +24,10 @@ router.get("/nosotros", (req, res, next) => {
     next();
 });
 
+router.get("/entrada", (req, res, next) => {
+    res.render("./pages/entrada");
+    myTitle= "Articulo";
+    next();
+});
+
 module.exports = router;
